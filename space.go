@@ -1,6 +1,7 @@
 package cp
 
 // #cgo CFLAGS: -DNDEBUG
+// #define CP_USE_CGTYPES 0
 // #include "chipmunk/chipmunk.h"
 import "C"
 
@@ -20,5 +21,5 @@ func (s *Space) GetGravity() (float64, float64) {
 }
 
 func (s *Space) SetGravity(x float64, y float64) {
-	C.cpSpaceSetGravity(s.ptr, C.cpVect{C.CGFloat(x), C.CGFloat(y)})
+	C.cpSpaceSetGravity(s.ptr, C.cpVect{C.cpFloat(x), C.cpFloat(y)})
 }
