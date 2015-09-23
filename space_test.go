@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestNewSpace(t *testing.T) {
+func TestGravity(t *testing.T) {
 	space := NewSpace()
 	gravityX, gravityY := -10.0, 0.0
 
