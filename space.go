@@ -1,6 +1,8 @@
 package cp
 
 // #cgo CFLAGS: -DNDEBUG -std=gnu99
+// #cgo linux LDFLAGS: -lm
+//
 // #define CP_USE_CGTYPES 0
 // #include "chipmunk/chipmunk.h"
 import "C"
