@@ -1,5 +1,7 @@
 package cp
 
+// #cgo CFLAGS: -IChipmunk2D/include
+// #cgo CFLAGS: -IChipmunk2D/src
 // #cgo CFLAGS: -DNDEBUG -std=gnu99
 // #cgo linux LDFLAGS: -lm
 //
